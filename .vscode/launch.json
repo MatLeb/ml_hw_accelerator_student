@@ -1,0 +1,94 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Unit Test x86",
+            "type": "cppdbg",
+            "request": "launch",
+            "targetArchitecture": "x86_64",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "internalConsoleOptions": "openOnSessionStart",
+            "logging": {
+                "moduleLoad": true,
+                "programOutput": true,
+                "trace": false
+            },
+            "stopAtEntry": true,
+            "cwd": "${fileDirname}",
+            "environment": [
+                {
+                    "name": "LD_LIBRARY_PATH",
+                    "value": "${env:LD_LIBRARY_PATH}:${workspaceFolder}/local/systemc-2.3.3/lib64"
+                }
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/opt/rh/devtoolset-7/root/usr/bin/gdb"
+        },
+        {
+            "name": "Debug Unit Test ARM64",
+            "type": "cppdbg",
+            "request": "launch",
+            "targetArchitecture": "arm64",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "internalConsoleOptions": "openOnSessionStart",
+            "logging": {
+                "moduleLoad": true,
+                "programOutput": true,
+                "trace": false
+            },
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "Debug Step1",
+            "type": "cppdbg",
+            "request": "launch",
+            "targetArchitecture": "arm64",
+            "program": "${workspaceFolder}/step1/code/sim_sc",
+            "args": [
+                "file_io"
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "logging": {
+                "moduleLoad": true,
+                "programOutput": true,
+                "trace": false
+            },
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "Debug Step1 (fast)",
+            "type": "cppdbg",
+            "request": "launch",
+            "targetArchitecture": "arm64",
+            "program": "${workspaceFolder}/step1/code/sim_sc_fast",
+            "args": [
+                "file_io"
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "logging": {
+                "moduleLoad": true,
+                "programOutput": true,
+                "trace": false
+            },
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb"
+        },
+    ]
+}

@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "ml_hw_python"
+version = "0.1.0"
+description = ""
+authors = ["Mathieu Lebon <mathieu.lebon@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+GitPython = "^3.1.40"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
