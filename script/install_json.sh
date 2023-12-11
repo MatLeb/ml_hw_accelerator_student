@@ -4,7 +4,8 @@ cd $PROJECT_INSTALL
 if [ ! -d ./json ]; then
  mkdir -p ./BUILD
  cd ./BUILD
- git clone --branch v3.11.2 --depth 1 git@github.com:nlohmann/json.git
+ git clone --branch v3.11.2 --depth 1 https://github.com/nlohmann/json.git
+ #git clone --branch v3.11.2 --depth 1 git@github.com:nlohmann/json.git
  #git clone --branch v3.1.0 --depth 1 git@github.com:nlohmann/json.git
  cd json
  mkdir build

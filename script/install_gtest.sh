@@ -5,7 +5,8 @@ if [ ! -d ./googletest ]; then
  
  mkdir -p ./BUILD
  cd ./BUILD
- git clone git@github.com:google/googletest.git
+ #git clone git@github.com:google/googletest.git
+ git clone https://github.com/google/googletest.git
  cd googletest
  git fetch --all --tags
 
